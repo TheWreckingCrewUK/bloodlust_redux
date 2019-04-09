@@ -1,0 +1,13 @@
+name = "BloodLust Redux";
+picture = "mod.paa";
+actionName = "Project Page";
+action = "https://github.com/TheWreckingCrewUK/bloodlust_redux";
+description = "Adds more gore to the game.";
+logo = "mod.paa";
+logoOver = "mod.paa";
+tooltip = "BloodLust Redux";
+tooltipOwned = "";
+overview = "Get Gorey";
+author = "thewreckingcrew.eu, originally Gavin N. Alvesteffer";
+overviewPicture = "mod.paa";
+overviewText = "";
