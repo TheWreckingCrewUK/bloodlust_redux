@@ -51,9 +51,10 @@ def main():
     for root, dirnames, filenames in os.walk('../' + args.module):
         for filename in fnmatch.filter(filenames, '*.sqf'):
             if 'fn_advancedTowingInit.sqf' not in filename:
-                if (os.path.join(root, filename)) not in sqf_list:
-                    sqf_list.append(os.path.join(root, filename))
-        
+                filePath = os.path.join(root, filename)
+                if filePath not in sqf_list:
+                    sqf_list.append(filePath)
+    
     for filename in sqf_list:
         warnings, errors = analyze(filename)
         currentTime = time.time()
