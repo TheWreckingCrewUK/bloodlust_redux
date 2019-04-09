@@ -5,6 +5,7 @@
 import fnmatch
 import os
 import sys
+import time
 import argparse
 from sqf.parser import parse
 import sqf.analyzer
@@ -41,6 +42,7 @@ def main():
     sqf_list = []
     all_warnings = 0
     all_errors = 0
+    start = time.time()
     
     parser = argparse.ArgumentParser()
     parser.add_argument('-m','--module', help='only search specified module addon folder', required=False, default=".")
@@ -53,6 +55,8 @@ def main():
         
     for filename in sqf_list:
         warnings, errors = analyze(filename)
+        currentTime = time.time()
+        print ("Execution Time: {0}".format(currentTime - start))
         all_warnings += warnings
         all_errors += errors
     
