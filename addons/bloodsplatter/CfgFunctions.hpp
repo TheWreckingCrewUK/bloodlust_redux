@@ -4,12 +4,11 @@ class CfgFunctions {
 			file = "bloodsplatter\functions";
 			
 			/** INIT AND HANDLERS **/
-			class initUnit {};
-			class handleKilledVehicle {};
-			class handleKilledUnit {};
-			class handleHitPartUnit {};
 			class handleExplosionUnit {};
+			class handleHitPartUnit {};
 			class handleHitUnit {};
+			class handleKilledUnit {};
+			class handleKilledVehicle {};
 			class handleRespawn {};
 		};
 	};

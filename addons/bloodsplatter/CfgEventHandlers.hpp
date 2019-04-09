@@ -4,18 +4,16 @@ class Extended_PreInit_EventHandlers {
 	};
 };
 
-class Extended_InitPost_EventHandlers {
+class Extended_Killed_EventHandlers {
 	class CAManBase {
 		class BloodSplatter {
-			init = "[_this select 0] call BloodLust_fnc_InitUnit;";
+			killed = "_this call BloodLust_fnc_handleKilledUnit;";
 		};
 	};
-};
-
-class Extended_Killed_EventHandlers {
+	
 	class AllVehicles {
 		class BloodSplatter {
-			init = "_this call BloodLust_fnc_handleKilledVehicle;";
+			killed = "_this call BloodLust_fnc_handleKilledVehicle;";
 		};
 	};
 };
@@ -24,6 +22,30 @@ class Extended_Respawn_EventHandlers {
 	class CAManBase {
 		class BloodSplatter {
 			respawn = "_this call BloodLust_fnc_handleRespawn;";
+		};
+	};
+};
+
+class Extended_HitPart_EventHandlers {
+	class CAManBase {
+		class BloodSplatter {
+			hitPart = "_this call BloodLust_fnc_handleHitPartUnit;";
+		};
+	};
+};
+
+class Extended_Explosion_EventHandlers {
+	class CAManBase {
+		class BloodSplatter {
+			explosion = "_this call BloodLust_fnc_handleExplosionUnit;";
+		};
+	};
+};
+
+class Extended_Hit_EventHandlers {
+	class CAManBase {
+		class BloodSplatter {
+			hit = "_this call BloodLust_fnc_handleHitUnit;";
 		};
 	};
 };
