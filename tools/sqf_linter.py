@@ -21,13 +21,14 @@ def analyze(filename, startTime, writer=sys.stdout):
             result = parse(code)
         except SQFParserError as e:
             currentTime = time.time()
-            print("{0}:{1}".format(filename, currentTime))
+            print("{0}: {1}".format(filename, (currentTime - startTime))
             writer.write('    [%d,%d]:%s\n' % (e.position[0], e.position[1] - 1, e.message))
             return 0, 1
 
         exceptions = sqf.analyzer.analyze(result).exceptions
         if (exceptions): 
-            print("{}:".format(filename))
+            currentTime = time.time()
+            print("{0}: {1}".format(filename, (currentTime - startTime))
             for e in exceptions:
                 if (e.message.startswith("error")):
                     errors += 1
