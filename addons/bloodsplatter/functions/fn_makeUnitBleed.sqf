@@ -15,7 +15,7 @@ _target setVariable [format ["BloodLust_NextBleedTime_%1", _selectionName], call
 
 [{
 	params ["_args"];
-	_args ["_target", "_initialUnitDamage", "_projectileVelocity", "_selectionName", "_bulletVectorDir", "_bulletVectorUp", "_endTime", "_arterialBloodSprayEndTime", "_bleedSmearEndTime"];
+	_args params ["_target", "_initialUnitDamage", "_projectileVelocity", "_selectionName", "_bulletVectorDir", "_bulletVectorUp", "_endTime", "_arterialBloodSprayEndTime", "_bleedSmearEndTime"];
 
 	_nextBleedTime = _target getVariable [format ["BloodLust_NextBleedTime_%1", _selectionName], 0];
 	_splatterAngle = random 360;

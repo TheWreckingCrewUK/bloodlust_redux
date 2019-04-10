@@ -65,6 +65,17 @@
 ] call CBA_settings_fnc_init;
 
 [
+	"BloodLust_BloodSprayFramerate",
+	"SLIDER",
+	"Blood Spray Framerate",
+	["BloodLust Redux", "Performance Settings"],
+	[0, 120, 80, -1],
+	nil, // isGlobal
+	{  }, // script called when setting is changed
+	true
+] call CBA_settings_fnc_init;
+
+[
 	"BloodLust_IsVaporisedHeatWaveEnabled",
 	"CHECKBOX",
 	"Enable Vaporisation Heat Refraction Effects",

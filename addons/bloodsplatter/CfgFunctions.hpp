@@ -22,6 +22,8 @@ class CfgFunctions {
 			class attachBleeding {};
 			class attachSmearBleeding {};
 			class makeUnitBleed {};
+			class createArterialBloodSpray {};
+			class createBloodSpray {};
 			
 			/** HELPERS **/
 			class isUnitHitByVehicle {};
