@@ -25,6 +25,7 @@ class CfgFunctions {
 			class createArterialBloodSpray {};
 			class createBloodSpray {};
 			class createBloodSplash {};
+			class createBloodSplatter {};
 			
 			/** HELPERS **/
 			class isUnitHitByVehicle {};
