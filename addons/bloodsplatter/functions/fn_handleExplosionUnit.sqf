@@ -1,9 +1,9 @@
 params ["_unit", "_damage"];
 
-if(_unit getVariable ["BloodLust_IsVaporized", false]) exitWith {};
+if (_unit getVariable ["BloodLust_IsVaporized", false]) exitWith {};
 
 if (BloodLust_IsVaporisationEnabled && _damage >= BloodLust_VaporisationDamageThreshold) exitWith {
-	[_unit, _damage * 0.3] call BloodLust_fnc_VaporiseUnit;
+	[_unit, _damage * 0.3] call BloodLust_fnc_vaporiseUnit;
 };
 
 if(_damage >= BloodLust_ExplosionDamageThreshold) then {
@@ -19,6 +19,6 @@ if(_damage >= BloodLust_ExplosionDamageThreshold) then {
 			4,
 			random 360,
 			selectRandom BloodLust_VaporizationBloodSplatters
-		] call BloodLust_fnc_CreateBloodSplatter;
+		] call BloodLust_fnc_createBloodSplatter;
 	};
 };

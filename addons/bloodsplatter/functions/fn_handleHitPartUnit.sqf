@@ -15,17 +15,8 @@ if((position _unit) distance (positionCameraToWorld [0, 0, 0]) <= BloodLust_Bloo
 	};
 
 	_hitSelection = _hitSelectionsFiltered select 0;
-	_target       = _hitSelection select 0;
-	_shooter      = _hitSelection select 1;
-	_bullet       = _hitSelection select 2;
-	_hitPosition  = _hitSelection select 3;
-	_velocity     = _hitSelection select 4;
-	_selections   = _hitSelection select 5;
-	_ammo         = _hitSelection select 6;
-	_direction    = _hitSelection select 7;
-	_radius       = _hitSelection select 8;
-	_surface      = _hitSelection select 9;
-	_isDirectHit  = _hitSelection select 10;
+	_hitSelection params ["_target", "_shooter", "_bullet", "_hitPosition", "_velocity", "_selections", "_ammo", "_direction", "_radius", "_surface", "_isDirectHit"];
+	
 	_ammoDamage   = _ammo select 0;
 	_ammoCaliber =  getNumber(configFile >> "CfgAmmo" >> (_ammo select 4) >> "caliber");
 
