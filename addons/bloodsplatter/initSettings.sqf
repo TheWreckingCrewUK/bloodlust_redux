@@ -65,6 +65,17 @@
 ] call CBA_settings_fnc_init;
 
 [
+	"BloodLust_IsVaporisedHeatWaveEnabled",
+	"CHECKBOX",
+	"Enable Vaporisation Heat Refraction Effects",
+	["BloodLust Redux", "Performance Settings"],
+	true,
+	nil, // isGlobal
+	{  }, // script called when setting is changed
+	true
+] call CBA_settings_fnc_init;
+
+[
 	"BloodLust_IsCleanUpEnabled",
 	"CHECKBOX",
 	"Enable Cleanup",

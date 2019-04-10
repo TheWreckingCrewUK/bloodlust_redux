@@ -14,10 +14,14 @@ BLR adds a series of public events through CBA's Event System. These will enable
 
 ### Global Events
 
-todo: documentation (global, things like unit vaporised)
+ Name | Paramaters | Desc
+ --- | --- | ---
+BloodLust_unitVaporised | _unit <OBJECT>
+_gibForce <INTEGER>
+_gibs <ARRAY (OBJECTS)>
+_bloodSplatters <ARRAY (OBJECTS)> | Called after a unit is vaporised
 
 ### Local Events
-These events are called only on the origin machine, either due to the fact that they are only local in effect or to cut significant traffic where use cases are fringe.
 
  Name | Paramaters | Desc 
  --- | --- | --- 

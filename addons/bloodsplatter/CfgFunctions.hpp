@@ -14,6 +14,7 @@ class CfgFunctions {
 			/** DAMAGE **/
 			class unitHitByVehicle {};
 			class unitFallVaporisation {};
+			class vaporiseUnit {};
 			
 			/** EFFECTS **/
 			class createBloodPoolObject {};
