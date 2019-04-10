@@ -18,9 +18,11 @@ class CfgFunctions {
 			/** EFFECTS **/
 			class createBloodPoolObject {};
 			class createGib {};
+			class attachBleeding {};
 			
 			/** HELPERS **/
 			class isUnitHitByVehicle {};
+			class reduceBounciness {};
 		};
 	};
 };
