@@ -19,6 +19,7 @@ class CfgFunctions {
 			class createBloodPoolObject {};
 			class createGib {};
 			class attachBleeding {};
+			class attachSmearBleeding {};
 			
 			/** HELPERS **/
 			class isUnitHitByVehicle {};

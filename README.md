@@ -22,4 +22,4 @@ These events are called only on the origin machine, either due to the fact that 
  Name | Paramaters | Desc 
  --- | --- | --- 
 BloodLust_gibCreated | _gib <OBJECT> | Called each time a gib has been created
-BloodLust_splatterCreated | _spllater <OBJECT> | Called each time a splatter has been created
+BloodLust_splatterCreated | _splatter <OBJECT> | Called each time a splatter has been created (could be a smear, too)
