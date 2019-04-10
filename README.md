@@ -25,4 +25,4 @@ BloodLust_unitBleedingStopped | _unit \<OBJECT> | Called after the unit has stop
  Name | Paramaters | Desc 
  --- | --- | --- 
 BloodLust_gibCreated | _gib \<OBJECT> | Called each time a gib has been created
-BloodLust_splatterCreated | _splatter \<OBJECT> | Called each time a splatter has been created (could be a smear, too)
+BloodLust_splatterCreated | _splatter \<OBJECT> | Called each time a splatter has been created (smears, too)

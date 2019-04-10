@@ -29,6 +29,8 @@ class CfgFunctions {
 			/** HELPERS **/
 			class isUnitHitByVehicle {};
 			class reduceBounciness {};
+			class getCalculatedSplatterPlacement {};
+			class assignSplatterToBuilding {};
 		};
 	};
 };
