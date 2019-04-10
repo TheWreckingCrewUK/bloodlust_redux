@@ -1,5 +1,5 @@
 class CfgFunctions {
-	class BloodSplatter {
+	class BloodLust {
 		class functions {
 			file = "bloodsplatter\functions";
 			
@@ -10,6 +10,12 @@ class CfgFunctions {
 			class handleKilledUnit {};
 			class handleKilledVehicle {};
 			class handleRespawn {};
+			
+			/** DAMAGE'D EFFECTS **/
+			class unitHitByVehicle {};
+			
+			/** HELPERS **/
+			class isUnitHitByVehicle {};
 		};
 	};
 };

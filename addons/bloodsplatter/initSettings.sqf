@@ -140,3 +140,14 @@
 	{  }, // script called when setting is changed
 	true
 ] call CBA_settings_fnc_init;
+
+[
+	"BloodLust_UnitVehicleVaporisationCollisionSpeed",
+	"SLIDER",
+	"Vehicle Vaporisation Collision Speed",
+	["BloodLust Redux", "Gameplay"],
+	[0, 500, 30, -1],
+	true, // isGlobal
+	{  }, // script called when setting is changed
+	true
+] call CBA_settings_fnc_init;
