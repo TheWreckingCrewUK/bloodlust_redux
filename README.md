@@ -16,10 +16,7 @@ BLR adds a series of public events through CBA's Event System. These will enable
 
  Name | Paramaters | Desc
  --- | --- | ---
-BloodLust_unitVaporised | _unit <OBJECT>
-_gibForce <INTEGER>
-_gibs <ARRAY (OBJECTS)>
-_bloodSplatters <ARRAY (OBJECTS)> | Called after a unit is vaporised
+BloodLust_unitVaporised | _unit <OBJECT>, _gibForce <INTEGER>, _gibs <ARRAY (OBJECTS)>, _bloodSplatters <ARRAY (OBJECTS)> | Called after a unit is vaporised
 
 ### Local Events
 
