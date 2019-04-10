@@ -43,6 +43,28 @@
 ] call CBA_settings_fnc_init;
 
 [
+	"BloodLust_IsBloodPoolingEnabled",
+	"CHECKBOX",
+	"Enable Blood Pooling",
+	["BloodLust Redux", "Performance Settings"],
+	true,
+	nil, // isGlobal
+	{  }, // script called when setting is changed
+	true
+] call CBA_settings_fnc_init;
+
+[
+	"BloodLust_BloodPoolFramerate",
+	"SLIDER",
+	"Blood Pooling Framerate",
+	["BloodLust Redux", "Performance Settings"],
+	[0, 30, 15, -1],
+	nil, // isGlobal
+	{  }, // script called when setting is changed
+	true
+] call CBA_settings_fnc_init;
+
+[
 	"BloodLust_IsCleanUpEnabled",
 	"CHECKBOX",
 	"Enable Cleanup",

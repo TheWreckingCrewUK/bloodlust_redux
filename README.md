@@ -12,7 +12,13 @@ This project is maintained by: http://thewreckingcrew.eu
 ## Custom Events
 BLR adds a series of public events through CBA's Event System. These will enable mission/mod makers to trigger certain functionality, when an event occurs, per their needs.
 
-### Unit Vaporised
-This event is triggered when a Unit has been vaporised.
+### Global Events
 
-todo: documentation
+todo: documentation (global, things like unit vaporised)
+
+### Local Events
+These events are called only on the origin machine, either due to the fact that they are only local in effect or to cut significant traffic where use cases are fringe.
+
+ Name | Paramaters | Desc 
+ --- | --- | --- 
+BloodLust_gibCreated | _gib <OBJECT> | Called each time a gib has been created

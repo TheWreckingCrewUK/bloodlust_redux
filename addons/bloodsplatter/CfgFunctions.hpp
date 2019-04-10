@@ -11,8 +11,13 @@ class CfgFunctions {
 			class handleKilledVehicle {};
 			class handleRespawn {};
 			
-			/** DAMAGE'D EFFECTS **/
+			/** DAMAGE **/
 			class unitHitByVehicle {};
+			class unitFallVaporisation {};
+			
+			/** EFFECTS **/
+			class createBloodPoolObject {};
+			class createGib {};
 			
 			/** HELPERS **/
 			class isUnitHitByVehicle {};
