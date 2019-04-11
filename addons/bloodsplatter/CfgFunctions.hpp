@@ -32,6 +32,10 @@ class CfgFunctions {
 			class reduceBounciness {};
 			class getCalculatedSplatterPlacement {};
 			class assignSplatterToBuilding {};
+			class createBloodSplatterObject {};
+			class createBloodSmearObject {};
+			class createGibObject {};
+			class cleanUp {};
 		};
 	};
 };
