@@ -36,6 +36,31 @@ class CfgFunctions {
 			class createBloodSmearObject {};
 			class createGibObject {};
 			class cleanUp {};
+			
+			/** UTILITY **/
+			class rotateAroundNormal {};
+			class rotateObjectAroundNormal {};
+			class getSurfaceIntersection {};
+			class getNextBleedTime {};
+			class getVelocityMagnitude {};
+			class isObjectCompletelyOnSurface {};
+			class animateObjectTexture {};
+			class getGibClassnames {};
+			class getSplatterTextures {};
+			class getSplatterTextureSetIndexFromDamage {};
+			class isClassInIntersectionBlackList {};
+			class isAmmoInVaporisationWhitelist {};
+			class isMaxBloodSplattersReached {};
+			class isMaxArterialBloodSpraysReached {};
+			class removeOldArterialBloodSpray {};
+			class removeOldBloodSplatter {};
+			class isMaxBloodSpraysReached {};
+			class removeOldBloodSpray {};
+			class isMaxBleedSplattersReached {};
+			class removeOldBleedSplatter {};
+			class isMaxGibsReached {};
+			class removeOldGib {};
+			class playSound {};
 		};
 	};
 };
