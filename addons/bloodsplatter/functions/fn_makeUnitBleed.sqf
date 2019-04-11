@@ -98,7 +98,7 @@ _target setVariable [format ["BloodLust_NextBleedTime_%1", _selectionName], call
 
 			if (_surfaceDistance > 0.3) then {
 				_splatterPosition = _surfacePosition vectorAdd (_surfaceNormal vectorMultiply 0.01);
-				_splatter = call BloodLust_fnc_createBleedSplatterObject;
+				_splatter = call BloodLust_fnc_createBloodSmearObject;
 				_splatter setObjectTexture [0, selectRandom BloodLust_BleedTextures];
 				_splatter setPosASL _splatterPosition;
 				[_splatter, _surfaceNormal, _splatterAngle] call BloodLust_fnc_rotateObjectAroundNormal;

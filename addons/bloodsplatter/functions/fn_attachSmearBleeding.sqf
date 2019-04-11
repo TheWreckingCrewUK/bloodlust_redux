@@ -31,7 +31,7 @@ _endTime = time + _duration;
 				_object call BloodLust_fnc_getVelocityMagnitude >= _minimumSpeed
 			) then {
 				_splatterPosition = _surfacePosition vectorAdd (_surfaceNormal vectorMultiply 0.01);
-				_splatter = call BloodLust_fnc_createBleedSplatterObject;
+				_splatter = call BloodLust_fnc_createBloodSmearObject;
 				_splatter setDir (random 360);
 				_splatter setObjectTexture [0, selectRandom BloodLust_SmearTextures];
 				_splatter setPosASL _splatterPosition;

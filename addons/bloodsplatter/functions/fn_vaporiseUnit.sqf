@@ -79,7 +79,7 @@ _unitSurfaceIntersection params [
 ];
 
 if (_unitIsIntersecting) then {
-	_largeSplatter = call BloodLust_fnc_createLargeBloodSplatterObject;
+	_largeSplatter = ["large"] call BloodLust_fnc_createBloodSplatterObject;
 	_largeSplatter setObjectTexture [0, selectRandom BloodLust_LargeVaporizationBloodSplatters];
 	_largeSplatter setDir (random 360);
 	_largeSplatter setVectorUp _unitSurfaceNormal;
