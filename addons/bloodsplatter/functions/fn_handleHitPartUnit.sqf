@@ -1,4 +1,7 @@
-if (!BloodLust_IsBloodLustEnabled || count _this > 1) exitWith {};
+if (count _this > 1) exitWith {};
+// still broadcast regardless of local setting, maybe a weird server allows people to turn off individually??
+if (local _unit) then { ["BloodLust_Broadcast_HitPartUnit", _this] call CBA_fnc_globalEvent; };
+if (!BloodLust_IsBloodLustEnabled) exitWith {};
 
 _unit = (_this select 0) select 0;
 

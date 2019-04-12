@@ -1,6 +1,7 @@
 params ["_unit", "_damage"];
 
 if (_unit getVariable ["BloodLust_IsVaporized", false]) exitWith {};
+if (local _unit) then { ["BloodLust_Broadcast_ExplosionUnit", _this] call CBA_fnc_globalEvent; };
 
 if (BloodLust_IsVaporisationEnabled && _damage >= BloodLust_VaporisationDamageThreshold) exitWith {
 	[_unit, _damage * 0.3] call BloodLust_fnc_vaporiseUnit;
