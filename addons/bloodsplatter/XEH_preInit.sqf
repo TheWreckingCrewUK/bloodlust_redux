@@ -6,6 +6,5 @@
 }] call CBA_fnc_addEventHandler;
 
 ["BloodLust_Broadcast_HitPartUnit", {
-	if !(local ((_this select 0) select 0) then { _this call BloodLust_fnc_handleHitPartUnit; };
+	if !(local ((_this select 0) select 0)) then { _this call BloodLust_fnc_handleHitPartUnit; };
 }] call CBA_fnc_addEventHandler;
-
