@@ -1,6 +1,6 @@
 class Extended_PreInit_EventHandlers {
 	class BloodSplatter {
-		init = "call compile preprocessFileLineNumbers 'XEH_preInit.sqf';";
+		init = "call compile preprocessFileLineNumbers 'bloodsplatter\XEH_preInit.sqf';";
 	};
 };
 
