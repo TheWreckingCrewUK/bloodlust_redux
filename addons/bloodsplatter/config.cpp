@@ -4,7 +4,7 @@ class CfgPatches {
 
 		requiredAddons[] = {
 			"cba_main",
-			"A3_UI-F",
+			"A3_UI_F",
 			"A3_Data_F"
 		};
 
